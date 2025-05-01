@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Grow herbs, craft potions and run your cozy alchemist shop in Alchemy Garden — a relaxing farming and crafting game.">
+    <title>MadSushi Games</title>
+    <link rel="icon" type="image/png" href="LogoMad.png">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #2b2b2b;
+            color: #e0e0e0;
+            font-family: 'Fredoka', sans-serif;
+            line-height: 1.6;
+            padding: 1rem;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+            header img {
+                width: 200px;
+                height: auto;
+            }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            color: #ffffff;
+        }
+
+        h2 {
+            margin-top: 2rem;
+            font-size: 1.5rem;
+            color: #ffffff;
+            border-bottom: 1px solid #444;
+            padding-bottom: 0.3rem;
+        }
+
+        a {
+            color: #80cbc4;
+            text-decoration: none;
+        }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+        ul {
+            padding-left: 1.2rem;
+        }
+
+            ul li {
+                margin-bottom: 1rem;
+            }
+
+        img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+
+        .store-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            align-items: center;
+            margin-top: 1rem;
+        }
+
+            .store-links img {
+                width: 48%;
+                max-width: 150px;
+                height: auto;
+                border-radius: 0;
+                margin: 0;
+                transition: transform 0.2s ease;
+            }
+
+                .store-links img:hover {
+                    transform: scale(1.05);
+                }
+
+        footer {
+            margin-top: 4rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+
+        @media (min-width: 600px) {
+            body {
+                padding: 2rem;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            .store-links img {
+                width: 120px;
+            }
+        }
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-S151X26YXQ');
+    </script>
+</head>
+<body>
+  <header>
+    <img src="LogoMad.png" alt="MadSushi Logo">
+  </header>
+  <main>
+    <h1>Indie Games by MadSushi</h1>
+    <p>Hi! I'm Rubén Izquierdo, an independent game developer from Spain. I design and build handcrafted games under the name <strong>MadSushi</strong>.</p>
+
+    <section>
+        <h2>Alchemy Garden</h2>
+        <p>Alchemy Garden is a cozy alchemy game where you grow herbs, craft magical potions, and manage your own alchemist shop. Explore nature, discover new potion recipes, decorate your store, and enjoy relaxing farming and crafting gameplay.</p>
+        <img src="alchemy-cover-rees.jpg" alt="Alchemy Garden">
+        <div class="store-links">
+            <a href="https://store.steampowered.com/app/1112890/Alchemy_Garden/" target="_blank"><img src="SteamLogo.png" alt="Steam"></a>
+            <a href="https://madsushigames.itch.io/alchemy-garden" target="_blank"><img src="ItchIo.svg" alt="Itch.io"></a>
+            <a href="https://www.nintendo.com/store/products/alchemy-garden-switch/" target="_blank"><img src="SwitchLogo.png" alt="Nintendo Switch"></a>
+            <a href="https://store.playstation.com/en-us/concept/10008222" target="_blank"><img src="PS5Logo.png" alt="PlayStation"></a>
+            <a href="https://www.xbox.com/en-us/games/store/alchemy-garden/9mzff9k46x48" target="_blank"><img src="xbox-seriesxs.png" alt="Xbox"></a>
+        </div>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>You can reach me at <a href="mailto:info@madsushigames.com">info@madsushigames.com</a></p>
+      <p>Follow me on <a href="https://twitter.com/MadSushiDev" target="_blank">X (formerly Twitter): @MadSushiDev</a></p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2019 - <span id="year"></span> MadSushi Games. All rights reserved.</p>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
